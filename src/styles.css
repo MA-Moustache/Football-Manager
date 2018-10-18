@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-image: url(header.jpg);
+  background-repeat: repeat;
+  background-position:center;
+}
+
+.content{
+  background-color: whitesmoke;
+  margin: 0 auto;
+  width:90%;
+  height: 100%;
+}
