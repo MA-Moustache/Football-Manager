@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {ShowTableComponent} from './show-table/show-table.component';
+import {ShowTableComponent} from './show-list-players/show-table.component';
 import {RouterModule, Routes} from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
