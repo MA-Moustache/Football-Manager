@@ -6,6 +6,7 @@ import {ShowTableComponent} from './show-table/show-table.component';
 import {RouterModule, Routes} from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
+import { ShowPlayerComponent } from './show-player/show-player.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,9 @@ const appRoutes: Routes = [
   },
   {
     path: '', component: IndexComponent
+  },
+  {
+    path: 'ShowPlayerComponent', component: ShowPlayerComponent
   },
   {
     path: 'FouroFour', component: FourOFourComponent
@@ -30,6 +34,7 @@ const appRoutes: Routes = [
     ShowTableComponent,
     IndexComponent,
     FourOFourComponent,
+    ShowPlayerComponent,
   ],
   imports: [
     BrowserModule,
