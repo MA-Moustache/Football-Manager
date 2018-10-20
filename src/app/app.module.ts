@@ -16,10 +16,10 @@ const appRoutes: Routes = [
     path: 'ShowTableComponent', component: ShowTableComponent
   },
   {
-    path: '', component: IndexComponent
+    path: 'ShowPlayerComponent', component: ShowPlayerComponent
   },
   {
-    path: 'ShowPlayerComponent', component: ShowPlayerComponent
+    path: '', component: IndexComponent
   },
   {
     path: 'FouroFour', component: FourOFourComponent
