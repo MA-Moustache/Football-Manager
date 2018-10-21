@@ -1,7 +1,4 @@
-import {Component, NgModule, OnInit} from '@angular/core';
-import {AppComponent} from '../app.component';
-import {BrowserModule} from '@angular/platform-browser';
-import {RouterModule} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-show-player',
@@ -9,12 +6,10 @@ import {RouterModule} from '@angular/router';
   styleUrls: ['./show-player.component.css']
 })
 export class ShowPlayerComponent implements OnInit {
-
+  rangeValue: 10;
   constructor() { }
 
   ngOnInit(): void {
   }
-
-
 
 }

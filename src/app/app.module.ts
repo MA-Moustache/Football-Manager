@@ -7,6 +7,8 @@ import {RouterModule, Routes} from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { ShowPlayerComponent } from './show-player/show-player.component';
+import { MatSliderModule , MatFormFieldModule , MatInputModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   {
@@ -38,7 +40,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
