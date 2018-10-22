@@ -7,10 +7,11 @@ import {RouterModule, Routes} from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { ShowPlayerComponent } from './show-player/show-player.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './auth/sign-in/login.component';
 import { MatSliderModule , MatFormFieldModule , MatInputModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
 
 const appRoutes: Routes = [
   {
@@ -27,6 +28,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'Dashboard', component: DashboardComponent
+  },
+  {
+    path: 'SignUpComponent', component: SignUpComponent
   },
   {
     path: '', component: IndexComponent
@@ -47,6 +51,7 @@ const appRoutes: Routes = [
     ShowPlayerComponent,
     LoginComponent,
     DashboardComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
