@@ -12,6 +12,7 @@ import { MatSliderModule , MatFormFieldModule , MatInputModule} from '@angular/m
 import {FormsModule} from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { ShowListInfrastructuresComponent } from './show-list-infrastructures/show-list-infrastructures.component';
 
 const appRoutes: Routes = [
   {
@@ -27,10 +28,13 @@ const appRoutes: Routes = [
     path: 'LoginComponent', component: LoginComponent
   },
   {
-    path: 'Dashboard', component: DashboardComponent
+    path: 'DashboardComponent', component: DashboardComponent
   },
   {
     path: 'SignUpComponent', component: SignUpComponent
+  },
+  {
+    path: 'ShowListInfrastructuresComponent', component: ShowListInfrastructuresComponent
   },
   {
     path: '', component: IndexComponent
@@ -52,6 +56,7 @@ const appRoutes: Routes = [
     LoginComponent,
     DashboardComponent,
     SignUpComponent,
+    ShowListInfrastructuresComponent,
   ],
   imports: [
     BrowserModule,
