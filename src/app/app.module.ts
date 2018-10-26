@@ -12,7 +12,6 @@ import { MatSliderModule , MatFormFieldModule , MatInputModule} from '@angular/m
 import {FormsModule} from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
-import { SignUpComponent } from './auth/sign-up/sign-up.component';
 
 const appRoutes: Routes = [
   {
@@ -29,9 +28,6 @@ const appRoutes: Routes = [
   },
   {
     path: 'Dashboard', component: DashboardComponent
-  },
-  {
-    path: 'SignUpComponent', component: SignUpComponent
   },
   {
     path: 'SignUpComponent', component: SignUpComponent
@@ -55,7 +51,6 @@ const appRoutes: Routes = [
     ShowPlayerComponent,
     LoginComponent,
     DashboardComponent,
-    SignUpComponent,
     SignUpComponent,
   ],
   imports: [
