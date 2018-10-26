@@ -7,9 +7,10 @@ import {RouterModule, Routes} from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { ShowPlayerComponent } from './show-player/show-player.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './auth/sign-in/login.component';
 import { MatSliderModule , MatFormFieldModule , MatInputModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
 
 const appRoutes: Routes = [
   {
@@ -23,6 +24,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'LoginComponent', component: LoginComponent
+  },
+  {
+    path: 'SignUpComponent', component: SignUpComponent
   },
   {
     path: '', component: IndexComponent
@@ -42,6 +46,7 @@ const appRoutes: Routes = [
     FourOFourComponent,
     ShowPlayerComponent,
     LoginComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
