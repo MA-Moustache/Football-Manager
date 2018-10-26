@@ -6,7 +6,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./show-player.component.css']
 })
 export class ShowPlayerComponent implements OnInit {
-  rangeValue: 10;
+ rangeAttaque :number;
+ rangeDefense:number;
   constructor() { }
 
   ngOnInit(): void {

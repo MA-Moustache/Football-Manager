@@ -36,18 +36,18 @@
             <div class="form-group">
               <label class="col-md-4 control-label">Attaque</label>
               <div class="col-md-8 inputGroupContainer">
-                <mat-slider [(ngModel)]="rangeValue"></mat-slider>
+                <mat-slider [(ngModel)]="rangeAttaque" name="attaque"></mat-slider>
                 <mat-form-field>
-                  <input type="text" matInput placeholder="Attaque" [(ngModel)]="rangeValue">
+                  <input type="text" matInput placeholder="Attaque" [(ngModel)]="rangeAttaque" name="attaque">
                 </mat-form-field>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-4 control-label">Defense</label>
               <div class="col-md-8 inputGroupContainer">
-                <mat-slider [(ngModel)]="rangeValue"></mat-slider>
+                <mat-slider [(ngModel)]="rangeDefense" name="defense"></mat-slider>
                   <mat-form-field>
-                  <input type="text" matInput placeholder="Defense" [(ngModel)]="rangeValue">
+                  <input type="text" matInput placeholder="Defense" [(ngModel)]="rangeDefense" name="defense">
                 </mat-form-field>
               </div>
             </div>
