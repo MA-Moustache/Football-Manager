@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { ShowListInfrastructuresComponent } from './show-list-infrastructures/show-list-infrastructures.component';
+import { ShowMailComponent } from './show-mail/show-mail.component';
 
 const appRoutes: Routes = [
   {
@@ -37,6 +38,9 @@ const appRoutes: Routes = [
     path: 'ShowListInfrastructuresComponent', component: ShowListInfrastructuresComponent
   },
   {
+    path: 'ShowMailComponent', component: ShowMailComponent
+  },
+  {
     path: '', component: IndexComponent
   },
   {
@@ -57,6 +61,7 @@ const appRoutes: Routes = [
     DashboardComponent,
     SignUpComponent,
     ShowListInfrastructuresComponent,
+    ShowMailComponent,
   ],
   imports: [
     BrowserModule,
