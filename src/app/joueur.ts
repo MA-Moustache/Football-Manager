@@ -8,6 +8,7 @@ export class Joueur {
   private _numeroMaillot: number;
 
 
+  // test
   constructor(nom: string = "", prenom: string = "", attaque: number, defense: number, salaire: number, numeroMaillot: number)
   {
     this._nom = nom;
