@@ -14,8 +14,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { ShowListInfrastructuresComponent } from './show-list-infrastructures/show-list-infrastructures.component';
 import { ShowMailComponent } from './show-mail/show-mail.component';
-import { SmartPlayerManagerComponent } from './smart-player-manager/smart-player-manager.component';
 import {HttpClientModule} from '@angular/common/http';
+import { SmartPlayerManagerComponent } from './smart-player-manager/smart-player-manager.component';
+import { CreateMailComponent } from './create-mail/create-mail.component';
+import { SentMailComponent } from './sent-mail/sent-mail.component';
 
 const appRoutes: Routes = [
   {
@@ -43,6 +45,12 @@ const appRoutes: Routes = [
     path: 'ShowMailComponent', component: ShowMailComponent
   },
   {
+    path: 'CreateMailComponent', component: CreateMailComponent
+  },
+  {
+    path: 'SentMailComponent', component: SentMailComponent
+  },
+  {
     path: '', component: IndexComponent
   },
   {
@@ -64,6 +72,8 @@ const appRoutes: Routes = [
     SignUpComponent,
     ShowListInfrastructuresComponent,
     ShowMailComponent,
+    CreateMailComponent,
+    SentMailComponent,
     SmartPlayerManagerComponent,
   ],
   imports: [
