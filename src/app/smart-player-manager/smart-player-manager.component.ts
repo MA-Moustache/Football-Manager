@@ -26,6 +26,7 @@ export class SmartPlayerManagerComponent implements OnInit, OnDestroy {
   }
 
   getPlayers(){
+    // @ts-ignore
     this._subQueryPlayers = this.playerService.query().subscribe(players => this._players = players.map(player => new Joueur().fromJson(player)));
   }
 
