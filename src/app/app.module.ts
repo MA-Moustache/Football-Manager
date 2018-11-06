@@ -14,6 +14,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { ShowListInfrastructuresComponent } from './show-list-infrastructures/show-list-infrastructures.component';
 import { ShowMailComponent } from './show-mail/show-mail.component';
+import { SmartPlayerManagerComponent } from './smart-player-manager/smart-player-manager.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   {
@@ -62,6 +64,7 @@ const appRoutes: Routes = [
     SignUpComponent,
     ShowListInfrastructuresComponent,
     ShowMailComponent,
+    SmartPlayerManagerComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ const appRoutes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
 
   ],
   providers: [],

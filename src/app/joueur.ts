@@ -9,7 +9,7 @@ export class Joueur {
 
 
   // test
-  constructor(nom: string = "", prenom: string = "", attaque: number, defense: number, salaire: number, numeroMaillot: number)
+  constructor(nom: string = "", prenom: string = "", attaque: number = 0, defense: number = 0, salaire: number = 0, numeroMaillot: number = 0)
   {
     this._nom = nom;
     this._prenom = prenom;
@@ -76,7 +76,8 @@ export class Joueur {
   }
 
   public fromJson(json: any): Joueur {
-    Object.assign(this, json);
+    // @ts-ignore
+    Object.assign(this, json); // il va matcher json -> this
     return this;
   }
 
