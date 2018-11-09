@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { SmartPlayerManagerComponent } from './smart-player-manager/smart-player-manager.component';
 import { CreateMailComponent } from './create-mail/create-mail.component';
 import { SentMailComponent } from './sent-mail/sent-mail.component';
+import { SmartInfraManagerComponent } from './smart-infra-manager/smart-infra-manager.component';
 
 const appRoutes: Routes = [
   {
@@ -25,6 +26,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'SmartPlayerManagerComponent', component: SmartPlayerManagerComponent
+  },
+  {
+    path: 'SmartInfraManagerComponent', component: SmartInfraManagerComponent
   },
   {
     path: 'ShowTableComponent', component: ShowTableComponent
@@ -77,7 +81,8 @@ const appRoutes: Routes = [
     ShowMailComponent,
     CreateMailComponent,
     SentMailComponent,
-    SmartPlayerManagerComponent
+    SmartPlayerManagerComponent,
+    SmartInfraManagerComponent
   ],
   imports: [
     BrowserModule,

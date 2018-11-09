@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Joueur} from '../joueur';
+import {Infrastructure} from '../infrastructure';
 
 @Component({
   selector: 'app-show-list-infrastructures',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowListInfrastructuresComponent implements OnInit {
 
+  private _infras:Infrastructure[] = [];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  get infras(): Infrastructure[] {
+    return this._infras;
+  }
+
+  @Input()
+  set infras(value: Infrastructure[]) {
+    this._infras = value;
+  }
 }

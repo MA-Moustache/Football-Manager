@@ -38,8 +38,8 @@ export class SmartPlayerManagerComponent implements OnInit, OnDestroy {
     this._players = value;
   }
 
-  postJoueur(todo: Joueur) {
+  postJoueur(joueur: Joueur) {
     // NE PAS OUBLIER LE SUBSCRIPTION
-    this.playerService.post(todo).subscribe();
+    this.playerService.post(joueur).subscribe();
   }
 }
