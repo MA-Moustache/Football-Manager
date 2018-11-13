@@ -10,10 +10,6 @@ export class PlayerDataServiceService {
 
   public static readonly URL_API_JOUEUR: string = '/api/joueur';
 
-
-
-
-
   constructor(public http: HttpClient) { }
 
   public query(): Observable<Joueur[]> {

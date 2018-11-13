@@ -76,7 +76,6 @@ export class Joueur {
   }
 
   public fromJson(json: any): Joueur {
-    // @ts-ignore
     Object.assign(this, json); // il va matcher json -> this
     return this;
   }

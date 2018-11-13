@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {ShowTableComponent} from './show-list-players/show-table.component';
+import {ShowTableComponent} from './show-table/show-table.component';
 import {RouterModule, Routes} from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
@@ -18,10 +18,22 @@ import {HttpClientModule} from '@angular/common/http';
 import { SmartPlayerManagerComponent } from './smart-player-manager/smart-player-manager.component';
 import { CreateMailComponent } from './create-mail/create-mail.component';
 import { SentMailComponent } from './sent-mail/sent-mail.component';
+import { SmartInfraManagerComponent } from './smart-infra-manager/smart-infra-manager.component';
+import { CreatePlayerComponent } from './create-player/create-player.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {
     path: 'IndexComponent', component: IndexComponent
+  },
+  {
+    path: 'SmartPlayerManagerComponent', component: SmartPlayerManagerComponent
+  },
+  {
+    path: 'CreatePlayerComponent', component: CreatePlayerComponent
+  },
+  {
+    path: 'SmartInfraManagerComponent', component: SmartInfraManagerComponent
   },
   {
     path: 'ShowTableComponent', component: ShowTableComponent
@@ -75,6 +87,8 @@ const appRoutes: Routes = [
     CreateMailComponent,
     SentMailComponent,
     SmartPlayerManagerComponent,
+    SmartInfraManagerComponent,
+    CreatePlayerComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +97,8 @@ const appRoutes: Routes = [
     MatInputModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],
