@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ShowTableComponent} from '../show-list-players/show-table.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,18 +7,10 @@ import {ShowTableComponent} from '../show-list-players/show-table.component';
 })
 export class DashboardComponent implements OnInit {
 
-  moyenneAttaque = 6;
-  moyenneDefense = 3;
-  showtbls = new ShowTableComponent();
-  constructor() {
+  constructor() { }
+
+  ngOnInit()
+  {
+
   }
-
-    ngOnInit() {
-
-    }
-
-    getMoyenne() {
-      return ((this.showtbls.getattaque1() + this.showtbls.getattaque2()) / 2);
-    }
-
 }

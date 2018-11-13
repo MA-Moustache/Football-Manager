@@ -60,7 +60,7 @@ const appRoutes: Routes = [
     path: 'CreateMailComponent', component: CreateMailComponent
   },
   {
-    path: 'SenetMailComponent', component: SentMailComponent
+    path: 'SentMailComponent', component: SentMailComponent
   },
   {
     path: '', component: IndexComponent
