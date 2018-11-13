@@ -7,8 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowTableComponent implements OnInit {
 
+  attaque1 = 56;
+  attaque2 = 100;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getattaque1() {
+    return this.attaque1;
+  }
+
+  getattaque2() {
+    return this.attaque2;
   }
 }

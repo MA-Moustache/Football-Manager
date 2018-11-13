@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowListInfrastructuresComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
