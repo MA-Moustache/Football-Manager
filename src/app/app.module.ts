@@ -19,6 +19,7 @@ import { SmartPlayerManagerComponent } from './smart-player-manager/smart-player
 import { CreateMailComponent } from './create-mail/create-mail.component';
 import { SentMailComponent } from './sent-mail/sent-mail.component';
 import { SmartInfraManagerComponent } from './smart-infra-manager/smart-infra-manager.component';
+import { CreatePlayerComponent } from './create-player/create-player.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'SmartPlayerManagerComponent', component: SmartPlayerManagerComponent
+  },
+  {
+    path: 'CreatePlayerComponent', component: CreatePlayerComponent
   },
   {
     path: 'SmartInfraManagerComponent', component: SmartInfraManagerComponent
@@ -82,7 +86,8 @@ const appRoutes: Routes = [
     CreateMailComponent,
     SentMailComponent,
     SmartPlayerManagerComponent,
-    SmartInfraManagerComponent
+    SmartInfraManagerComponent,
+    CreatePlayerComponent
   ],
   imports: [
     BrowserModule,
