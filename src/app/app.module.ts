@@ -20,6 +20,7 @@ import { CreateMailComponent } from './create-mail/create-mail.component';
 import { SentMailComponent } from './sent-mail/sent-mail.component';
 import { SmartInfraManagerComponent } from './smart-infra-manager/smart-infra-manager.component';
 import { CreatePlayerComponent } from './create-player/create-player.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {
@@ -87,7 +88,7 @@ const appRoutes: Routes = [
     SentMailComponent,
     SmartPlayerManagerComponent,
     SmartInfraManagerComponent,
-    CreatePlayerComponent
+    CreatePlayerComponent,
   ],
   imports: [
     BrowserModule,
@@ -96,7 +97,8 @@ const appRoutes: Routes = [
     MatInputModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],

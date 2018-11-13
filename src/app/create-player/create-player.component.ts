@@ -21,7 +21,7 @@ export class CreatePlayerComponent implements OnInit {
   }
 
   createJoueur() {
-    this._joueurCreated.next(this._joueurTmp);
+    this._joueurCreated.next(this.joueurTmp);
     this.reset();
   }
 
@@ -31,7 +31,7 @@ export class CreatePlayerComponent implements OnInit {
 
   @Output()
   get joueurCreated(): EventEmitter<Joueur> {
-    return this.joueurCreated;
+    return this._joueurCreated;
   }
 
 }

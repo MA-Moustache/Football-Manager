@@ -1,47 +1,45 @@
 <div class="tab-pane" id="compose">
-
   <div class="container">
-    <div class="content-container clearfix">
-      <h1 class="content-title">Créer un joueur</h1>
-      <div class="col-md-12">
+    <h1 class="content-title">Créer un joueur</h1>
+    <div class="col-md-12">
+
+      <form action="" #formJoueur="ngForm" (submit)="createJoueur()">
+
         <div class="form-group">
-          <input id="nom" type="text" class="form-control" [(ngModel)]="joueurTmp.nom" placeholder="Nom" />
+          <input type="text" name="nom" class="form-control" [(ngModel)]="joueurTmp.nom" placeholder="nom">
         </div>
+
         <div class="form-group">
-          <input id="prenom" type="text" class="form-control" [(ngModel)]="joueurTmp.prenom" placeholder="Prenom" />
+          <input type="text" name="prenom" class="form-control" [(ngModel)]="joueurTmp.prenom" placeholder="prenom">
         </div>
+
         <div class="form-group">
           <label class="col-md-4 control-label">Attaque</label>
-          <div class="col-md-8 inputGroupContainer">
-            <mat-slider [(ngModel)]="joueurTmp.attaque" name="attaque"></mat-slider>
-            <mat-form-field>
-              <input type="text" matInput placeholder="Attaque" [(ngModel)]="joueurTmp.attaque" name="attaque">
-            </mat-form-field>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-md-4 control-label">Defense</label>
-          <div class="col-md-8 inputGroupContainer">
-            <mat-slider [(ngModel)]="joueurTmp.defense" name="defense"></mat-slider>
-            <mat-form-field>
-              <input type="text" matInput placeholder="Defense" [(ngModel)]="joueurTmp.defense" name="defense">
-            </mat-form-field>
-          </div>
-        </div>
-        <div class="form-group">
-          <input id="salaire" type="text" class="form-control" [(ngModel)]="joueurTmp.salaire" placeholder="Salaire" />
-        </div>
-        <div class="form-group">
-          <input id="numeroMaillot" type="text" class="form-control" [(ngModel)]="joueurTmp.numeroMaillot" placeholder="Numero de maillot" />
+          <mat-slider [(ngModel)]="joueurTmp.attaque" name="attaque"></mat-slider>
+          <mat-form-field>
+            <input type="text" matInput placeholder="Attaque" [(ngModel)]="joueurTmp.attaque" name="attaque">
+          </mat-form-field>
         </div>
 
-        <div class="btn-compose pull-left">
-          <button class="btn btn-danger btn-lg" routerLink="/ShowMailComponent"> <span class="glyphicon glyphicon-remove"></span> Annuler</button>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Defense</label>
+          <mat-slider [(ngModel)]="joueurTmp.defense" name="defense"></mat-slider>
+          <mat-form-field>
+            <input type="text" matInput placeholder="Defense" [(ngModel)]="joueurTmp.defense" name="defense">
+          </mat-form-field>
         </div>
-        <div class="btn-send pull-right">
-          <button class="btn btn-success btn-lg" (onclick)="createJoueur()">Confirmer</button>
+
+        <div class="form-group">
+          <input type="number" name="salaire" class="form-control" [(ngModel)]="joueurTmp.salaire" placeholder="salaire">
         </div>
-      </div>
+
+        <div class="form-group">
+          <input type="number" name="numeroMaillot" class="form-control" [(ngModel)]="joueurTmp.numeroMaillot" placeholder="numéro de maillot">
+        </div>
+        <div class="btn-send">
+          <input type="submit" class="btn btn-success" value="Create">
+        </div>
+      </form>
     </div>
   </div>
 </div>
